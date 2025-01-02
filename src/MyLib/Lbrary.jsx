@@ -1,15 +1,18 @@
-import Card from "./component/Card";
-import Sidebar from "./Layout/sidebar";
+import BookList from "./component/BookList";
+import ImageSlide from "./component/ImageSlide";
 
 function Library() {
   return (
-    <>
-      <div className="flex h-screen bg-gray-400">
-        <Card text='ini text' title='ini title' />  
-        <Card text='ini text' title='ini title'/>  
-        <Card text='ini text' title='ini title'/>  
+    <div>
+      <div className="bg-gray-400 p-10">
+        <div className="w-full h-64 mb-10 position: static">
+          <ImageSlide />
+        </div>
       </div>
-    </>
+      <div className="position: absolute">
+        <BookList />
+      </div>
+    </div>
   );
 }
 
